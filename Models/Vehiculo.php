@@ -7,12 +7,12 @@ namespace Models;
 
 class Vehiculo {
 
-    private $marca;
-    private $modelo;
-    private $color;
-    private $propietario;
-    private $planta;  //para hacer referencia a la planta (piso) en la que estaciona el vehículo (aunque no aparezca en el constructor al no saber en qué planta estará el coche).
-    private $plantas = array("superficie","subterraneo1","subterraneo2");
+    public $marca;
+    public $modelo;
+    public $color;
+    public $propietario;
+    public $planta;  //para hacer referencia a la planta (piso) en la que estaciona el vehículo (aunque no aparezca en el constructor al no saber en qué planta estará el coche).
+    public $plantas = array("superficie","subterraneo1","subterraneo2");
 
     protected $pasajeros; //pasajeros del vehiculo minimos
 

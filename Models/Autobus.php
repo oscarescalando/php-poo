@@ -9,7 +9,7 @@ use Models\Vehiculo;
 
 class Autobus extends Vehiculo {
 
-    private $empresa;
+    public $empresa;
 
     function __construct($miMarca,$miModelo,$miColor,$miPropietario,$miEmpresa){
 

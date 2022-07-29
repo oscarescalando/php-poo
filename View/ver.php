@@ -16,12 +16,14 @@
         <th>Modelo</th>
         <th>Color</th>
         <th>Propietario</th>
+        <th></th>
     </tr>
 
     <tr>
         <td><?php echo $row->marca ?></td>
         <td><?php echo $row->modelo ?></td>
         <td><?php echo $row->color ?></td>
-        <d><?php echo $row->propietario ?></td>
+        <td><?php echo $row->propietario ?></td>
+        <td><a href="javascript:window.history.back();">Regresar</a></td>
     </tr>
 </table>

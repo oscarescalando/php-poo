@@ -33,9 +33,8 @@ class CarrosController {
         //Asigno los coches a una variable que estará esperando la vista
         $rowset = $this->carros;
 
-
         //Le paso los datos a la vista
-        require("view/index.php");
+        require("View/index.php");
 
     }
 
@@ -47,7 +46,7 @@ class CarrosController {
 
             //Si el elemento está en el array, lo muestro
             $row = $this->carros[$id];
-            require("view/ver.php");
+            require("View/ver.php");
         }
         else{
 
