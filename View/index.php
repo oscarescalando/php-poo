@@ -63,10 +63,9 @@
             <td><?php echo $row->modelo ?></td>
             <td><?php echo $row->color ?></td>
             <td><?php echo $row->propietario ?></td>
-            <td><?php echo $row->empresa ?></td>
             <td><?php echo $row->setPasajeros($i+8); ?></td>
+            <td><?php echo $row->empresa ?></td>
             <td><?php echo ($row->puedeAparcar("superficie")) ? 'SI'  :'NO'; ?></td>
-
             <td></td>
         </tr>
 
