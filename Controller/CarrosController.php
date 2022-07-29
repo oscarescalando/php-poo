@@ -24,6 +24,12 @@ class CarrosController {
             3 => new Vehiculo("Skoda","Octavia","gris","Noemi"),
             4 => new Vehiculo("Kia","Niro","azul","Valeria")
         ];
+
+        $this->autobus = [
+            1 => new Autobus("Volvo","9800 2017","gris","oscar","TopDev"),
+            2 => new Autobus("Volvo2","9800 2020","gris","luis","K2"),
+            3 => new Autobus("Volvo3","9800 2022","gris","juan","Solana"),
+        ];
         
     }
 
@@ -32,6 +38,7 @@ class CarrosController {
 
         //Asigno los coches a una variable que estará esperando la vista
         $rowset = $this->carros;
+        $rowBus = $this->autobus;
 
         //Le paso los datos a la vista
         require("View/index.php");
