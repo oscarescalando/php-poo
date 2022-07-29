@@ -71,3 +71,25 @@
 
      <?php endforeach; ?>
 </table>
+
+
+<h1>Finally en try/catch</h1>
+
+<?php
+
+$file = fopen('log.txt', 'a');
+
+try {
+    fwrite($file, 'OPEN => Throwing exception | ');
+    throw new \Exception();
+} catch (\Exception $e) {
+    echo 'Threw a RangeException: ' . $e->getMessage();
+} finally {
+    // Always make sure that we close the file
+
+    echo 'Reached the finally block';
+    fwrite($file, 'Reached the finally block!!.. ');
+    fclose($file);
+}
+
+?>
